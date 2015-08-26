@@ -1,0 +1,512 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"is",
+				"isPhysicsSimulationInUpdate"
+			],
+			[
+				"c",
+				"PUBLIC clone() 	LIST<String>"
+			],
+			[
+				"Date",
+				"Datetime	[Standard Apex Class]"
+			],
+			[
+				"add",
+				"PUBLIC addAll(LIST elements) 	void"
+			],
+			[
+				"colr",
+				"background-color"
+			],
+			[
+				"border-bott",
+				"border-bottom-color"
+			],
+			[
+				"background-c",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/environment.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/json/tiles1.json",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/json/tiles1_10000_faces.json",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/json/tiles1_bak.json",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Fin_AccountIntegrationXmlBuilder.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Orc_BatchableIntegrationActioner.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Fin_AccountIntegration.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Fin_ExternalAccountBehaviour.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Fin_ExternalAccountSyncLinkController.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/pages/Fin_ExternalAccountSyncLink.page",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/UTIL_GeneralHelpers.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/UtilityMethods_Data.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/LP_LaunchpadSyncLinkController.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/pages/LP_LaunchpadSyncLink.page",
+		"/C/Users/david_waugh/AppData/Roaming/Sublime Text 3/Packages/MavensMate/mavensmate.sublime-settings",
+		"/C/Users/david_waugh/AppData/Roaming/Sublime Text 3/Packages/User/mavensmate.sublime-settings",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/SfdcStage.sublime-settings",
+		"/C/Users/david_waugh/Desktop/SfdcStage/Static Resource Bundle/acl_vf_small_component_style.css",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/deploy/david_waugh@acl.com/External SO Sync Aug 12c/unpackaged/classes/Fin_ContractAndOrderBehaviour.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Fin_ExternalSalesOrderXmlBuilder.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/deploy/david_waugh@acl.com/External SO Aug 6a/unpackaged/classes/Fin_ExternalSalesOrderXmlBuilder.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/pages/Fin_ExternalAccountSyncLinkPage.page",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Fin_ContractAndOrderBehaviour.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Fin_ExternalSalesOrderBehaviour.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Fin_ExternalSalesOrderIntegration.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/Fin_IntegrationHelper.cls",
+		"/C/Users/david_waugh/Desktop/SfdcStage/SfdcStage/src/classes/ACLAPIClasses.cls",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/bin/RunningGame.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/json/RampV2.json",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/loader.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/sim/sim.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/player.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/src/RunningGame.coffee",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/header.php",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/test.html",
+		"/C/xampp/htdocs/Repo_Version_List/physics-testbed/examples/heightfield.html",
+		"/C/xampp/htdocs/Repo_Version_List/physics-testbed/examples/compound.html",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/game.html",
+		"/C/Users/david_waugh/Documents/RR Files/Local Development/Physijs/examples/heightfield.html",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/css/expound.css",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/game.js",
+		"/C/Users/david_waugh/Desktop/stemkoski.github.com-master/Three.js/Collision-Detection.html",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/game.css",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/style.css",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/extensions/StereoEffect.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/car.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/jsonModel.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/footer.php",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/index.php",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/index.html",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game_checkpoint_may25/bin/RunningGame.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/effects/oculus.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/extensions/rStats.js",
+		"/C/Users/david_waugh/AppData/Roaming/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/game/environment - Copy.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/rrtheme_may25/rr-run/sim.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/rr-run/sim.js",
+		"/C/Users/David/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/David/AppData/Roaming/Sublime Text 3/Packages/User/mavensmate.sublime-settings",
+		"/C/Users/David/Documents/Projects/Heisnenberg/May 21 Development/protospr_lap/src/classes/LP_BulkSync.cls",
+		"/C/Users/David/Documents/Projects/Heisnenberg/May 21 Development/protospr_lap/src/classes/LP_Integration.cls",
+		"/C/Users/David/Documents/Projects/Heisnenberg/May 21 Development/protospr_lap/src/classes/LP_AccountBehaviour.cls",
+		"/C/Users/David/Documents/Projects/Heisnenberg/May 21 Development/protospr_lap/src/classes/Fin_OpportunityBehaviour.cls",
+		"/C/Users/David/Documents/Projects/Heisnenberg/May 21 Development/protospr_lap/src/classes/LP_LPAccountCreationWizardController.cls",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/rr-run/game.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/rr-run/components.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/rr-run/start.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/rr-run/scenes.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/css/expound.css",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/rr-run/index.html",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/header.php",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/functions.php",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/rr-run/game_controls.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/js/Snake.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/js/treecanvas.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/js/rr.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/js/rr-run/game_controls.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/js/rr-run/game_core.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/index.php",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/js/rr-run.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/rr-run/lib/crafty-min.js",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/style.css",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/footer.php",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/css/reset.css",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/js/headercanvas.js",
+		"/C/Users/David/Documents/Projects/ERP/Notes/ERP Preselection Meeting 2",
+		"/C/Users/David/Documents/Projects/Heisnenberg/Mar 20 Notes",
+		"/C/xampp/htdocs/wordpress/wp-content/themes/rrtheme/js/modernizr-1.0.js"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open folders>,C:\\xampp\\htdocs\\wordpress\\wp-content\\themes\\rrtheme",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Physijs",
+			"SPHERE",
+			"Fin_Long_Sync_Error__c",
+			"Long_Error_Message__c",
+			"mapAccsForFinUpdateToQueueId",
+			"Long_Error_Message__c",
+			"long_error",
+			"long_errro",
+			"afterActionDML",
+			"accountListToUpdate",
+			"update",
+			"batchId",
+			"mapAccsForFinCreateToQueueId",
+			"openWindow",
+			"thisAccount",
+			"selectedSyncOption",
+			"tooling",
+			"syncOptionsList",
+			"selectedSyncOption",
+			"selectedSyncOption\nselectedSyncOption",
+			"selectedSyncOption",
+			"isLaunchpadSynced",
+			"isExternalAccountSynced",
+			"refreshLink",
+			"ResynchronizeAccountToLaunchpad",
+			"getRevRecDatesString(",
+			"Co_term_Start_Date__c",
+			"Support_Start_Date__c",
+			"revRecDateFromTo",
+			"Primary_Contact",
+			"Account.Primary_Contact__r",
+			"Primary_Contact",
+			"Primary_Contact__r ",
+			"Account.Primary_Contact__r",
+			"Primary_Contact__",
+			"Primary_Contact__r",
+			"Account.Primary_Contact__r",
+			"Co_Term_Unit_Price__c",
+			"unitprice",
+			"DecimalCannotBeMergedForIntegrationException",
+			"price",
+			"ExternalOrder(",
+			"Fin_ExternalSalesOrderXmlBuilder.ExternalOrder(",
+			"isHistoricalSalesOrder",
+			"flex",
+			"ERPCustomer(",
+			"acc",
+			"mapOfAccountFlexiFieldValues",
+			"billing",
+			"email",
+			"addObject",
+			"objects",
+			"@objects",
+			"material",
+			"mesh",
+			"topperGeometry",
+			"sphere_geometry",
+			"SimplexNoise",
+			"Material",
+			"physijs.scripts.worker",
+			"update",
+			"physijs_worker",
+			"scene",
+			"ammo",
+			"console",
+			"29",
+			"isfront",
+			"isFrontthis.",
+			"isFront",
+			"PLAYER",
+			"PLAYER_START_Z",
+			"addConcatenatedMeshToScene",
+			"@levelGeo",
+			" player",
+			" @player",
+			" @playerv",
+			" @player",
+			"levelGeo",
+			"update",
+			"testCollision",
+			"DETECT",
+			"WebGLRenderer",
+			"effect",
+			"speedFacto",
+			"speedFactor\nspeedFactor",
+			"speedFactor",
+			"material",
+			"addObject",
+			"loadRacer",
+			"framerate troubleshoot lineout",
+			"stats",
+			"geometryDecorationForFace",
+			"modelPath",
+			"var modelPath",
+			"preInitLoad",
+			"canvas-container",
+			"tiles1.json",
+			"#canvas-container",
+			"NissanOBJ1A",
+			"Objects/NissanOBJ1.js",
+			"grayBox.js",
+			"models/Nissan GTR OBJ/Objects/NissanOBJ1.js",
+			"model.init({ url : \"models/Nis",
+			"projector",
+			"WebGLDetector",
+			"logEntry.Target_Response__c",
+			"logEntry.Code_Reference__c ",
+			"Integration_Log__c",
+			"IntegrationLog",
+			"earlySubscriptionEntitlement",
+			"acc.ID",
+			"GetEarlySubscriptionProductOrderItems",
+			"mapOfAccountsToUpdateInHivemind",
+			"Continent__c",
+			"UpdateExistingAccountInLaunchpad",
+			"\\/",
+			"WPURLS.siteurl + '",
+			"templateUrl",
+			"templateUrlWPURLS.siteurl",
+			"templateUrl",
+			"WPURLS.siteurl",
+			"'rr-run",
+			"rr-run",
+			"assets",
+			"engine",
+			"the_post_thumbnail",
+			"wp-post-image",
+			"site-header"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"IntegrationLog__c",
+			"Integration_Log",
+			"mapOfAccountsToUpdateInLaunchpad",
+			"\\",
+			"'C:\\\\xampp\\\\htdocs\\\\wordpress\\\\wp-content\\\\themes\\\\rrtheme\\\\rr-run\\\\assets\\\\",
+			"WPURLS.siteurl",
+			"templateUrlWPURLS.siteurl",
+			"templateUrl + '/rr-run",
+			"templateUrl/rr-run",
+			"rr-run/assets"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 370.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "rrcore_sublime_project.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"util",
+				"src\\classes\\UTIL_GeneralHelpers.cls"
+			],
+			[
+				"fin_externalsalesorder",
+				"src\\classes\\Fin_ExternalSalesOrderXmlBuilder.cls"
+			],
+			[
+				"lp_controller",
+				"src\\classes\\LP_LaunchpadSyncLinkController.cls"
+			],
+			[
+				"lp_launch",
+				"src\\pages\\LP_LaunchpadSyncLink.page"
+			],
+			[
+				"fin_account",
+				"src\\classes\\Fin_AccountIntegrationXmlBuilder.cls"
+			],
+			[
+				"fin_accountintegration",
+				"src\\classes\\Fin_AccountIntegration.cls"
+			],
+			[
+				"fin_contractandorderbehavi",
+				"src\\classes\\Fin_ContractAndOrderBehaviour.cls"
+			],
+			[
+				"fin_integrationhelper",
+				"src\\classes\\Fin_IntegrationHelper.cls"
+			],
+			[
+				"fin_externalsales",
+				"src\\classes\\Fin_ExternalSalesOrderXmlBuilder.cls"
+			],
+			[
+				"fin_ext",
+				"src\\classes\\Fin_ExternalSalesOrderIntegration.cls"
+			],
+			[
+				"fin_externalsalesorderb",
+				"src\\classes\\Fin_ExternalSalesOrderBehaviour.cls"
+			],
+			[
+				"fin_i",
+				"src\\classes\\Fin_IntegrationHelper.cls"
+			],
+			[
+				"utilitymethods_data",
+				"src\\classes\\UtilityMethods_Data.cls"
+			],
+			[
+				"env",
+				"game\\environment.js"
+			],
+			[
+				"sim.js",
+				"game\\sim\\sim.js"
+			],
+			[
+				"envi",
+				"game\\environment.js"
+			],
+			[
+				"player.js",
+				"game\\player.js"
+			],
+			[
+				"running",
+				"game\\src\\RunningGame.coffee"
+			],
+			[
+				"loader",
+				"game\\loader.js"
+			],
+			[
+				"envir",
+				"game\\environment.js"
+			],
+			[
+				"oc",
+				"game\\effects\\oculus.js"
+			],
+			[
+				"play.",
+				"game\\player.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 377.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
