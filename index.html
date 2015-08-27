@@ -1,16 +1,9 @@
 <!DOCTYPE html>
-<!-- Notes Section:
-	Babylon:  https://github.com/BabylonJS/Babylon.js
-	Babylon - Getting Started:  http://doc.babylonjs.com/#getting-started
-	Babylon - Major Forums:  http://www.html5gamedevs.com/forum/16-babylonjs/
-
-	Babylon - Class Hotlist: http://doc.babylonjs.com/generals/v2.0_Classes_Hotlist  -->
-
-
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
     <title>Babylon - Getting Started</title>
     <script src="babylon.2.1.debug.js"></script>
+    <script src="//js.pusher.com/2.2/pusher.min.js"></script>
     <style>
         html, body {
             overflow: hidden;
@@ -30,7 +23,16 @@
 <body>
     <canvas id="renderCanvas"></canvas>
     <script>
-        window.addEventListener('DOMContentLoaded', function(){
+
+      /* Does not seem to be a use for Pusher */
+      //id from pusher dev service token page
+    	//var pusher = new Pusher('0904fbea9468a6cc5ff9', null);
+      // console.log('==>Pusher instantiation:');
+      // console.log(pusher);
+      // console.log('<==Pusher instantiated:');
+
+
+      window.addEventListener('DOMContentLoaded', function(){
             // get the canvas DOM element
             var canvas = document.getElementById('renderCanvas');
 
@@ -39,47 +41,117 @@
 
             // createScene function that creates and return the scene
             var createScene = function(){
-                // create a basic BJS Scene object
-                var scene = new BABYLON.Scene(engine);
+            // create a basic BJS Scene object
+              var scene = new BABYLON.Scene(engine);
 
-                // create a FreeCamera, and set its position to (x:0, y:5, z:-10)
-                var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 5,-10), scene);
+              // create a FreeCamera, and set its position to (x:0, y:5, z:-10)
+              var camera = new BABYLON.FreeCamera('rrcore_camera1', new BABYLON.Vector3(0, 5,-10), scene);
 
-                // target the camera to scene origin
-                camera.setTarget(BABYLON.Vector3.Zero());
+              // target the camera to scene origin
+              camera.setTarget(BABYLON.Vector3.Zero());
 
-                // attach the camera to the canvas
-                camera.attachControl(canvas, false);
+              // attach the camera to the canvas
+              camera.attachControl(canvas, false);
 
-                // create a basic light, aiming 0,1,0 - meaning, to the sky
-                var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0,1,0), scene);
+              // create a basic light, aiming 0,1,0 - meaning, to the sky
+              var light = new BABYLON.HemisphericLight('rrcore_light1', new BABYLON.Vector3(0,1,0), scene);
 
-                // create a built-in "sphere" shape; its constructor takes 5 params: name, width, depth, subdivisions, scene
-                var sphere = new BABYLON.Mesh.CreateSphere('sphere1', 16, 2, scene);
+              // create a built-in "sphere" shape; its constructor takes 5 params: name, width, depth, subdivisions, scene
+              var sphere = new BABYLON.Mesh.CreateSphere('rrcore_sphere1', 16, 2, scene);
 
-                // move the sphere upward 1/2 of its height
-                sphere.position.y = 3;
+              // move the sphere upward 1/2 of its height
+              sphere.position.y = 4;
 
-                // create a built-in "ground" shape; its constructor takes the same 5 params as the sphere's one
-                var ground = new BABYLON.Mesh.CreateGround('ground1', 6, 6, 2, scene);
+              // create a built-in "ground" shape; its constructor takes the same 5 params as the sphere's one
+              //var ground = new BABYLON.Mesh.CreateGround('rrcore_ground1', 6, 6, 2, scene);
+              console.log('==> tiledGround mesh instantiation:');
 
-                // return the created scene
-                return scene;
+              // Parameters
+              var xmin = -3;
+              var zmin = -30;
+              var xmax =  3;
+              var zmax =  30;
+              var precision = {
+                  "w" : 1,
+                  "h" : 1
+              };
+              var subdivisions = {
+                  'h' : 50,
+                  'w' : 5
+              };
+              // Create the Tiled Ground
+              var tiledGround = new BABYLON.Mesh.CreateTiledGround("Tiled Ground", xmin, zmin, xmax, zmax, subdivisions, precision, scene);
+              // Part 2 : Create the multi material
+              // Create differents materials
+              var whiteMaterial = new BABYLON.StandardMaterial("White", scene);
+              whiteMaterial.diffuseColor = new BABYLON.Color3(1, 1, 1);
+
+              var blackMaterial = new BABYLON.StandardMaterial("Black", scene);
+              blackMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
+
+              // Create Multi Material
+              var multimat = new BABYLON.MultiMaterial("multi", scene);
+              multimat.subMaterials.push(whiteMaterial);
+              multimat.subMaterials.push(blackMaterial);
+
+              tiledGround.material = multimat;
+
+              var verticesCount = tiledGround.getTotalVertices();
+              var tileIndicesLength = tiledGround.getIndices().length / (subdivisions.w * subdivisions.h);
+
+              tiledGround.subMeshes = [];
+              var base = 0;
+              for (var row = 0; row < subdivisions.h; row++) {
+                  for (var col = 0; col < subdivisions.w; col++) {
+                       tiledGround.subMeshes.push(new BABYLON.SubMesh(row%2 ^ col%2, 0, verticesCount, base, tileIndicesLength, tiledGround));
+                       console.log('base');
+                       console.log(base);
+                       base += tileIndicesLength;
+                   }
+              }
+
+              tiledGround.position.z += 25;
+
+              console.log(tiledGround);
+
+              var knot = BABYLON.Mesh.CreateTorusKnot("rrcore_mesh", 2, 0.5, 128, 64, 2, 50, scene);
+
+              var material = new BABYLON.StandardMaterial("mat", scene);
+              material.diffuseColor = new BABYLON.Color3(1.5, 0, 0);
+
+              //tiledGround.material = material;
+              sphere.material = material;
+              knot.material = material;
+
+              var alpha = 0;
+              knot.scaling.y = 1.5;
+              scene.beforeRender = function() {
+                knot.rotation.x = alpha;
+                alpha += 0.03;
+              };
+
+              knot.position.x = 8;
+              knot.position.y = 0;
+              knot.position.z = 8;
+              // return the created scene
+
+              scene.debugLayer.show();
+              return scene;
             }
 
-            // call the createScene function
-            var scene = createScene();
+          // call the createScene function
+          var scene = createScene();
 
-            // run the render loop
-            engine.runRenderLoop(function(){
-                scene.render();
+          // run the render loop
+          engine.runRenderLoop(function(){
+              scene.render();
             });
 
-            // the canvas/window resize event handler
-            window.addEventListener('resize', function(){
-                engine.resize();
-            });
+        // the canvas/window resize event handler
+        window.addEventListener('resize', function(){
+            engine.resize();
         });
+      });
     </script>
 </body>
 </html>
